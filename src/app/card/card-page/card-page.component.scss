@@ -1,0 +1,47 @@
+.header-container {
+  position: relative;
+  margin: 0;
+}
+.image-content {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.header-text h3,
+h1,
+h4,
+button {
+  color: whitesmoke;
+}
+
+.a-style {
+  display: inline-block;
+  background-color: darkslategrey;
+  border-radius: 12px;
+  border-color: transparent;
+  color: white;
+  padding: 7px;
+  width: 10vw;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-style {
+  background-color: darkslategrey;
+  border-radius: 12px;
+  border-color: transparent;
+  padding: 7px;
+  width: 10vw;
+  cursor: pointer;
+}

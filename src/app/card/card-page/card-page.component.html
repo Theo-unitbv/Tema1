@@ -1,0 +1,12 @@
+<div class="header-container">
+  <img [src]="cardReceived.image" class="image-content" />
+  <div class="header-text">
+    <h3>DISCOVER THE COLORFUL WORLD</h3>
+    <h1>{{ cardReceived.title }}</h1>
+    <hr />
+    <h4>
+      {{ cardReceived.description }}
+    </h4>
+    <button (click)="returnMainPage()" class="btn-style">RETURN</button>
+  </div>
+</div>

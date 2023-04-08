@@ -1,0 +1,85 @@
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2% 0%;
+}
+.search-container input {
+  height: 50px;
+  width: 100%;
+  border-radius: 15px;
+  border-color: darkslategrey;
+  border-width: 2px;
+}
+.search-container h2 {
+  color: rgb(161, 161, 161);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(161, 161, 161);
+  color: whitesmoke;
+  border-radius: 30px;
+  padding: 40px;
+}
+.cards-container hr {
+  height: 3px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+.cards {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  padding: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.services-container h1 {
+  color: rgb(161, 161, 161);
+}
+
+.offers {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding: 40px;
+}
+
+.search-container h2 {
+  margin: 30px;
+}
+.title-text {
+  text-align: center;
+  padding: 10px;
+}
+.btn-style {
+  background-color: darkslategrey;
+  border-radius: 12px;
+  border-color: transparent;
+  color: whitesmoke;
+  padding: 7px;
+  width: 10vw;
+  margin: 10px 0 0;
+  cursor: pointer;
+}

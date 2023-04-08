@@ -1,0 +1,12 @@
+<div class="card-container">
+  <img
+    *ngIf="city.image !== undefined"
+    [src]="city.image"
+    class="image-content"
+  />
+  <div class="data-content">
+    <h3>{{ city.title }}</h3>
+    <p>{{ city.description }}</p>
+    <button (click)="navigateToCityPage()">VISIT NOW</button>
+  </div>
+</div>

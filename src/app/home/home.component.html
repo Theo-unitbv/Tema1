@@ -1,0 +1,38 @@
+<app-header
+  [cardReceived]="initialCard"
+  [principalPage]="principalPageShow"
+  (resetMainPage)="resetMainPage($event)"
+></app-header>
+<div *ngIf="principalPageShow" class="content-container">
+  <div class="search-container">
+    <h2>Search & Book all our destinations</h2>
+    <input placeholder="Select your city" [(ngModel)]="selectCity" />
+    <button (click)="goToCity()" class="btn-style">SEARCH</button>
+  </div>
+  <div class="services-container">
+    <div class="title-text">
+      <h1>OUR SERVICES</h1>
+      <hr />
+    </div>
+    <div class="offers">
+      <div *ngFor="let offer of availableOffers">
+        <app-offers [offer]="offer"></app-offers>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards-container">
+    <div class="title-text">
+      <h1>MOST POPULAR</h1>
+      <hr />
+    </div>
+    <div id="cities" class="cards">
+      <div *ngFor="let city of availableCities | filter : selectCity">
+        <app-card
+          (emitCityChosen)="chosenCity($event)"
+          [city]="city"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+</div>
