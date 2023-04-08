@@ -37,6 +37,10 @@ button {
   text-align: center;
   text-decoration: none;
 }
+.a-style:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 .btn-style {
   background-color: darkslategrey;
   border-radius: 12px;
@@ -44,4 +48,8 @@ button {
   padding: 7px;
   width: 10vw;
   cursor: pointer;
+}
+.btn-style:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }

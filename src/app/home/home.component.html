@@ -6,7 +6,12 @@
 <div *ngIf="principalPageShow" class="content-container">
   <div class="search-container">
     <h2>Search & Book all our destinations</h2>
-    <input placeholder="Select your city" [(ngModel)]="selectCity" />
+    <input
+      [ngClass]="nonExistentSearch ? 'wrong' : ''"
+      placeholder="Select your city"
+      [(ngModel)]="selectCity"
+      (ngModelChange)="valueChange($event)"
+    />
     <button (click)="goToCity()" class="btn-style">SEARCH</button>
   </div>
   <div class="services-container">
